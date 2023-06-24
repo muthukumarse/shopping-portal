@@ -22,12 +22,6 @@ pipeline {
       }
     }
 
-    stage('artifact') {
-      steps {
-        archiveArtifacts '**/distribution/*.zip'
-      }
-    }
-
     stage('Archive') {
       steps {
         archiveArtifacts '**/distribution/*.zip'
